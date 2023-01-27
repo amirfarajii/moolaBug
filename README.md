@@ -16,3 +16,10 @@ Address logic contract is "0xb9F812003aE906d381945E6010614c114Ecf1A59" on Celo n
 
 4. npx hardhat test
 ```
+
+### After hardhat run we get address of Destruct contract 
+![](Screenshot_address.png)
+
+
+### Finaly test contract
+![](Screenshot_test.png)
