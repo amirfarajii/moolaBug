@@ -1,9 +1,7 @@
 # Attack to Moola
+The bug in the LendingPool implementation contract, known as the Moola protocol, is that it hasn't been properly initialized in the logic contract. This means that anyone can call the initialize function and set the address provider. Additionally, the Moola protocol uses the delegatecall function in the liquidationCall function, which can potentially lead to a security vulnerability if the selfdestruct function is used. This could result in the destruction of the logic contract and the freezing of all funds in the Moola protocol, causing the protocol to not function correctly. Furthermore, all funds in the AToken contract would also be frozen, as the lending pool would no longer have access to mint, burn or transfer. The specific contract affected by this vulnerability is 0xb9F812003aE906d381945E6010614c114Ecf1A59 on Celo network, which is the LendingPoolImpl contract.
 
-This project for attack to Moola protocol, The Moola protocol hasn't  initialized in logic contract and every one can call initialize and set address provider, Moola use delegatecall in liquidationCall function, If  we use self destruct function in delegatecall, logic contract will be destruct and all funds in the Moola protocol will be frozen and protocol not working correctly.  
 
-
-Address logic contract is "0xb9F812003aE906d381945E6010614c114Ecf1A59" on Celo network.
 
 ## Try running some of the following tasks:
 
