@@ -21,5 +21,5 @@ Address logic contract is "0xb9F812003aE906d381945E6010614c114Ecf1A59" on Celo n
 ![](Screenshot_address.png)
 
 
-### Finaly test contract
+### Finally test contract
 ![](Screenshot_test.png)
