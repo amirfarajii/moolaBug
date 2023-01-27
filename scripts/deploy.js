@@ -22,7 +22,8 @@ async function main() {
 
   //await destruct.deployed();
 
-  console.log("Destruct address(you should replace this address to destruct address in attack.sol file):", destruct.address)
+  console.log("\n\nDestruct address(you should replace this address to destruct address in attack.sol file):\n\n",
+  "address:" , destruct.address, "\n\n")
 
 }
 
